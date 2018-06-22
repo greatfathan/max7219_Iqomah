@@ -4,7 +4,7 @@
 #define PIN_BUZZER 8
 
 void buzzerOn() {
-  tone(PIN_BUZZER, 1200, 600);
+  tone(PIN_BUZZER, 1000, 800);
 }
 
 

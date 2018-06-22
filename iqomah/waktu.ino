@@ -3,14 +3,19 @@ const int minutes = 60;
 
 int seconds = 0;
 
-void setSeconds(int sec) {
+void setCount(int sec) {
   seconds = sec;
 }
 
-int getMinutes() {
-  return floor(seconds/minutes);
+int getCount(){
+  return seconds;
 }
 
 int getSeconds() {
-  return (seconds % minutes);
+  return (int)(seconds - getMinutes() * 60) ;
 }
+
+int getMinutes() {
+  return (int)floor(seconds/60);
+}
+
